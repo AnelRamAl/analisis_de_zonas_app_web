@@ -1,0 +1,33 @@
+var deltaLat = 0;
+    var deltaLng = 0;
+    var a = 0;
+    var a1 = 0;
+    var a2 = 0;
+    var c = 0;
+    var d = 0;
+    var R = 6371; //6371 Km
+    var lat1 = 0;
+    var lng1 = 0;
+    var lat2 = 0;
+    var lng2 = 0;
+    const gradosARadianes = deg => (deg * Math.PI) / 180.0;
+
+  lat1 = gradosARadianes(19.003897);
+  lng1 = gradosARadianes(-98.2080724);
+  lat2 = gradosARadianes(19.06345051);
+  lng2 = gradosARadianes(-98.19688099);
+
+  deltaLat = lat2-lat1; //debe pasarse a radianes
+  deltaLng = lng2-lng1;
+
+  a1 = Math.sin((deltaLat/2));
+  a2 = Math.sin((deltaLng/2));
+ 
+  a = (a1*a1 + Math.cos(lat1))*Math.cos(lat2)*a2*a2;
+console.log(a);
+  c = 2*Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  console.log(c);
+  d = R*c;
+
+  console.log(d);
+ 

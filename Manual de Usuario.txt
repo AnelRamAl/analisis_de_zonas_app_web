@@ -1,0 +1,21 @@
+1. CORRER LA INTERFAZ DEL PROGRAMA
+   1.1 Montar servidor XAMPP   
+   1.1 Dar clik en Start en la opción Apache.
+   1.2 La carpeta de los archivos (mapasUno) debe estar en la ruta C:\xampp\htdocs.
+   1.2 Ingresar la ruta "localhost/mapasUno" en el explorador.
+   
+2. USO DE LA INTERFAZ DE USUARIO
+   2.1 Dar clik en el boton Cargar.
+   2.2 Dar clik en el marcardor de ubicación de Google deseado.
+   2.3 La interfaz se programo para ser dinámica por lo que al seguir dando clik en cualquier marcador (desde cargar el mapa 
+       o después del punto 2.2) seguira actualizando y centrando las ubicaciones.
+   2.4 La interfaz ofrece información del marcador seleccionado, parte inferior, CENTRAL junto con las ubicaciones 
+       circundantes a el dentro de 3km a la redonda.
+   2.5 Si quiere volver a ver todos los marcadores dar clik en cargar.
+   2.6 Guardar arhcivos:
+       -Dar clik en guardar e ingresar el nombre y la ruta deseada.
+        Nota: Los archivos ya están configuados para ser del tipo .arff y ya estarán con dicho formato (@ATTRIBUTE, @DATA,...)
+              para ser procesados por WEKA.
+
+
+
